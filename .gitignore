@@ -3,3 +3,8 @@
 volumes/
 shared/
 supabase/
+
+# Additional
+**/.env*
+**/*.env
+!.env.example
