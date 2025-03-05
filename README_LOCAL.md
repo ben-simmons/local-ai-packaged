@@ -95,7 +95,9 @@ To pull latest code from the original local-ai-packaged repo:
 1. Add the upstream remote:
   * `git remote add upstream https://github.com/coleam00/local-ai-packaged.git`
 2. Merge upstream changes into main and then merge main into my local branch:
-  * `git fetch upstream && git checkout main && git merge upstream/main && git checkout local && git merge main`
+  * `git fetch upstream && git checkout main && git merge --no-edit upstream/main && git checkout local && git merge --no-edit main`
+3. Sync origin with upstream
+  * `git checkout main && git push`
 
 See [Configuring Git to sync your fork with the upstream repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#configuring-git-to-sync-your-fork-with-the-upstream-repository)
 
