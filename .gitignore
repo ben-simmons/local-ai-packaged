@@ -3,8 +3,5 @@
 volumes/
 shared/
 supabase/
-
-# Additional
-**/.env*
-**/*.env
-!.env.example
+searxng/uwsgi.ini
+searxng/settings.yml
