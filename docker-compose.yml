@@ -79,7 +79,7 @@ services:
     restart: unless-stopped
     container_name: open-webui
     ports:
-      - "3002:8080"
+      - "9080:8080"
     expose:
       - 8080/tcp
     extra_hosts:
