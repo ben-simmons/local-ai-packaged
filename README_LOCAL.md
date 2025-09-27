@@ -100,6 +100,8 @@ To pull latest code from the original local-ai-packaged repo:
   * `git fetch upstream && git checkout main && git merge --no-edit upstream/main && git checkout local && git merge --no-edit main`
 3. Sync origin with upstream
   * `git checkout main && git push`
+4. Switch back to local and sync with github
+  * `git checkout local && git push`
 
 See [Configuring Git to sync your fork with the upstream repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#configuring-git-to-sync-your-fork-with-the-upstream-repository)
 
