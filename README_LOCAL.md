@@ -1,5 +1,7 @@
 # Local Setup
 
+This is a fork of: https://github.com/coleam00/local-ai-packaged.git
+
 Running on mac with a separate ollama instance outside of docker.
 
 
