@@ -83,10 +83,10 @@ To upgrade docker containers:
 
 ```
 # Stop all services
-docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml down
+docker compose -p localai down
 
 # Pull latest versions of all containers
-docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml pull
+docker compose -p localai pull
 
 # Start services again with your desired profile
 python start_services.py --profile none
