@@ -8,19 +8,15 @@ localai_root() {
 
 localai_pull() {
     cd $(localai_root)
-
-    # Pull latest versions of all containers
-    docker -f docker-compose.yml --profile none pull
+    docker compose --profile none pull
 }
 
 localai_start() {
     cd $(localai_root)
-
     python start_services.py --profile none
 }
 
 localai_stop() {
     cd $(localai_root)
-
     docker compose -p localai --profile none down --remove-orphans
 }
